@@ -1,0 +1,37 @@
+.container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2em;
+	width: 100%;
+	max-width: 1440px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo svg {
+	margin: 0 2.063em;
+	height: 30px;
+	width: auto;
+}
+
+.nav ul {
+	display: flex;
+	gap: 4em;
+}
+
+.nav li {
+	list-style-type: none;
+}
+
+.nav a {
+	font-weight: var(--font-bold);
+}

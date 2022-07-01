@@ -1,0 +1,29 @@
+.Button_red {
+	padding: 0.75em 1.5em;
+	font-weight: var(--font-bold);
+	color: var(--color-white) !important;
+	background-color: var(--color-team-red);
+}
+
+.Button_red:hover,
+.button_red:active,
+.button_red:focus-visible {
+	text-decoration: none;
+	color: var(--color-team-red) !important;
+	background-color: var(--color-white);
+}
+
+.Button_purple {
+	padding: 0.75em 1.5em;
+	font-weight: var(--font-bold);
+	color: var(--color-white) !important;
+	background-color: var(--color-accent-purple);
+}
+
+.Button_purple:hover,
+.button_purple:active,
+.button_purple:focus-visible {
+	text-decoration: none;
+	color: var(--color-accent-purple) !important;
+	background-color: var(--color-white);
+}

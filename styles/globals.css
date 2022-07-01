@@ -1,16 +1,174 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css);
+@font-face {
+	font-family: "Euclid Square";
+	src: url(https://www.swisstypefaces.com/media/ul/fonts/cuts/woff/EuclidSquare-Regular-WebXL.woff)
+		format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Euclid Square";
+	src: url(https://www.swisstypefaces.com/media/ul/fonts/cuts/woff/EuclidSquare-Medium-WebXL.woff)
+		format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Euclid Square";
+	src: url(https://www.swisstypefaces.com/media/ul/fonts/cuts/woff/EuclidSquare-Semibold-WebXL.woff)
+		format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Euclid Square";
+	src: url(https://www.swisstypefaces.com/media/ul/fonts/cuts/woff/EuclidSquare-Bold-WebXL.woff)
+		format("woff");
+	font-weight: 700;
+	font-style: normal;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+	/* Colors */
+	--color-accent: hsl(356, 84%, 62%);
+	--color-foreground: hsl(250, 41%, 9%);
+	--color-background: hsl(0, 0%, 100%);
+	--color-text: hsl(0, 0%, 0%);
+
+	--color-midnight: hsl(250, 41%, 9%);
+	--color-team-red: hsl(356, 84%, 62%);
+	--color-accent-purple: hsl(247, 64%, 64%);
+	--color-accent-blue: hsl(181, 56%, 70%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-black: hsl(0, 0%, 0%);
+
+	/* Margins */
+	--pading-body: 32px;
+	--margin: 1rem;
+
+	/* Fonts */
+	font-size: 16px;
+	--font-thin: 100;
+	--font-light: 300;
+	--font-regular: 400;
+	--font-medium: 500;
+	--font-semi-bold: 600;
+	--font-bold: 700;
+	--font-extra-bold: 800;
+	--font-black: 900;
+
+	/* Animation */
+	--translate: -12.15%;
+	--transition: all 100ms ease-out;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--color-text);
+	background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button,
+span {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: "Euclid Square", sans-serif;
+	font-size: 5.653rem;
+	font-weight: var(--font-bold);
+	text-decoration: none;
+	margin: none;
+	/* line-height: 2; */
+}
+
+h2 {
+	font-family: "Euclid Square", sans-serif;
+	font-size: 3.998rem;
+	font-weight: var(--font-bold);
+	text-decoration: none;
+	margin: none;
+	/* line-height: 1.7; */
+}
+
+h3 {
+	font-family: "Euclid Square", sans-serif;
+	font-size: 2.827rem;
+	font-weight: var(--font-bold);
+	text-decoration: none;
+	margin: none;
+	/* line-height: 1.4; */
+}
+
+h4 {
+	font-family: "Euclid Square", sans-serif;
+	font-size: 1.687rem;
+	font-weight: var(--font-bold);
+	text-decoration: none;
+	margin: none;
+	/* line-height: 1.4; */
+}
+
+h5 {
+	font-family: "Euclid Square", sans-serif;
+	font-size: 1.414rem;
+	font-weight: var(--font-bold);
+	text-decoration: none;
+	margin: none;
+	/* line-height: 1.4; */
+}
+
+p {
+	font-family: "Euclid Square", sans-serif;
+	font-size: 1rem;
+	font-weight: var(--font-regular);
+	text-decoration: none;
+	margin: none;
+	/* line-height: 1.4; */
+}
+
+a {
+	font-family: "Euclid Square", sans-serif;
+	font-size: 1rem;
+	font-weight: var(--font-regular);
+	text-decoration: none;
+	margin: none;
+	/* line-height: 1.4; */
+}
+
+a:link,
+a:visited {
+	color: var(--color-text);
+}
+
+a:hover,
+a:active {
+	color: var(--color-text);
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+		/* Colors */
+		--color-accent: hsl(356, 84%, 62%);
+		--color-foreground: hsl(0, 0%, 100%);
+		--color-background: hsl(250, 41%, 9%);
+		--color-text: hsl(0, 0%, 100%);
+	}
 }
